@@ -18,20 +18,19 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand nav-link active" href="#">list IT</a>
+        <a class="navbar-brand nav-link active" href="index.html">list IT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="login.html">Login</a>
+            <a class="nav-item nav-link" href="#">Login</a>
             <a class="nav-item nav-link" href="register.html">Register</a>
           </div>
         </div>
       </nav>
 
-    <main role="main">
-
+      <main role="main">
         <!-- Main jumbotron for header -->
         <div class="jumbotron">
             <div class="container text-center">
@@ -41,21 +40,43 @@
         </div>
 
         <div class="container">
+            <h2>Login</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Login</li>
+                </ol>
+            </nav>
+
+            <!-- Example row of columns for content -->
+            <form>
+                <div class="form-group">
+                  <label for="userName">User Name</label>
+                  <input type="text" class="form-control" id="userName" aria-describedby="userName" placeholder="User Name">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember Me</label>
+                </div>
+                <a href="index.html" class="btn btn-light btn-lg active" role="button" aria-pressed="true">Cancel</a>
+                <a href="#" class="btn btn-info btn-lg active" role="button" aria-pressed="true">Submit</a>
+              </form>
+        </div> 
+        <!-- /container -->
+
+        <div class="container">
             <!-- Example row of columns for content -->
             <div class="row justify-content-md-center">
                 <div class="col-md-4">
-                    <h2>Welcome</h2>
-                    <p>Lists. We all have them: Grocery Lists; ToDo Lists; Party Shopping Lists; ...</p>
-                    <p><img src="img/logo_lg.png" alt="Large list IT logo" class="large logo"/></p>
-                    <p>With list IT you can easily create and manage your Lists from your computer, smart phone or tablet.</p>
-                    <p><a class="btn btn-primary btn-md" href="#" role="button">Get Started</a></p>
+                    <h3>Don't have an account yet?</h3>
+                    <p>An account is required to use this site so we are able to differentiate user data.</p>
+			        <a href="register.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register</a>
                 </div>
             </div>
-
-            <hr>
-
-        </div> 
-        <!-- /container -->
 
     </main>
 
@@ -70,4 +91,5 @@
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
