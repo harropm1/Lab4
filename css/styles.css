@@ -39,7 +39,21 @@ body {
         display: inline;
     }
 } 
+
+.breadcrumb{
+    background: none;
+}
+
 .jumbotron {
+    padding-top: 10px;
+}
+
+form {
+    width: 50%;
+}
+
+.row {
+    padding-left: 120px;
     padding-top: 10px;
 }
 
