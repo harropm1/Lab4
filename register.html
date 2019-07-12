@@ -9,28 +9,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <!--My CSS and images-->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.ico" type="image/ico"/>
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
     <title>list IT</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand nav-link active" href="index.html">list IT</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="login.html">Login</a>
-            <a class="nav-item nav-link" href="#">Register</a>
-          </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="login.html">Login</a>
+                <a class="nav-item nav-link" href="#">Register</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      <main role="main">
+    <main role="main">
 
         <!-- Main jumbotron for header -->
         <div class="jumbotron">
@@ -41,25 +42,76 @@
         </div>
 
         <div class="container">
+            <h2>Register</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="login.html">Login</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Register</li>
+                </ol>
+              </nav>
+
             <!-- Example row of columns for content -->
-            <div class="row justify-content-md-center">
-                <div class="col-md-4">
-                    <h2>Welcome</h2>
-                    <p>Lists. We all have them: Grocery Lists; ToDo Lists; Party Shopping Lists; ...</p>
-                    <p><img src="img/logo_lg.png" alt="Large list IT logo" class="large logo"/></p>
-                    <p>With list IT you can easily create and manage your Lists from your computer, smart phone or tablet.</p>
-                    <p><a class="btn btn-primary btn-md" href="#" role="button">Get Started</a></p>
+            <form>
+                <div class="form-group row">
+                    <label for="userName" class="col-sm-3 col-form-label text-right">User Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="userName" placeholder="User Name">
+                    </div>
                 </div>
-            </div>
+                <div class="form-group row">
+                    <label for="password" class="col-sm-3 col-form-label text-right">Password:</label>
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="confirm" class="col-sm-3 col-form-label text-right">Confirm:</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="confirm" placeholder="Confirm Password">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label text-right">Email Address:</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="email" placeholder="you@domain.com">
+                    </div>
+                </div>
+                <div class="form-check form-check-inline radio1">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Friend</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Internet Search</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio1">Other</label>
+                </div>
+                <br />
+                <div class="form-group row">
+                    <label for="other" class="col-sm-3 col-form-label text-right">&nbsp;</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="other" placeholder="&nbsp;">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="index.html" class="btn btn-light btn-md active" role="button" aria-pressed="true">Cancel</a>
+                    <a href="list_manager.html" class="btn btn-info btn-md active" role="button" aria-pressed="true">Submit</a>
+                </div>
+            </form>
+            <br />
 
-            <hr>
-
-        </div> 
+            <p class="col-sm-7 text-right">Rest assured your information will not be shared with any other parties!</p>
+        </div>
         <!-- /container -->
+        <hr>
 
     </main>
-
-    <hr>
 
     <footer class="container">
         <p>&copy; list IT 2019</p>
