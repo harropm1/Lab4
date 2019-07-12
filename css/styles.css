@@ -46,15 +46,21 @@ body {
 
 .jumbotron {
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 form {
-    width: 50%;
+    width: 60%;
 }
 
-.row {
+.welcome {
     padding-left: 120px;
     padding-top: 10px;
+}
+
+.radio1 {
+    padding-left: 175px;
+    padding-bottom: 10px;
 }
 
 footer {
